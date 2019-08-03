@@ -1,0 +1,27 @@
+[submodule "Checkpoint"]
+	path = Checkpoint
+	url = https://github.com/FlagBrew/Checkpoint.git
+[submodule "Atmosphere"]
+	path = Atmosphere
+	url = https://github.com/Atmosphere-NX/Atmosphere.git
+[submodule "nx-hbmenu"]
+	path = nx-hbmenu
+	url = https://github.com/switchbrew/nx-hbmenu.git
+[submodule "nx-hbloader"]
+	path = nx-hbloader
+	url = https://github.com/switchbrew/nx-hbloader.git
+[submodule "ftpd"]
+	path = ftpd
+	url = https://github.com/mtheall/ftpd.git
+[submodule "hekate"]
+	path = hekate
+	url = https://github.com/CTCaer/hekate.git
+[submodule "NX-Shell"]
+	path = NX-Shell
+	url = https://github.com/joel16/NX-Shell.git
+[submodule "KipSelect"]
+	path = KipSelect
+	url = https://github.com/Sciguy429/KipSelect.git
+[submodule "Goldleaf"]
+	path = Goldleaf
+	url = https://github.com/XorTroll/Goldleaf.git
