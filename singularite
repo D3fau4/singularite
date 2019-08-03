@@ -1,4 +1,4 @@
-all: dirs ams nxshell kipselect hb static hkt
+all: dirs ams sig nxshell goldleaf kipselect hb static hkt
 
 clean:
 	@rm -rf _dist
@@ -14,6 +14,7 @@ dirs:
 	@[ -d "_dist/sd/switch/NX-Shell" ] || mkdir _dist/sd/switch/NX-Shell
 	@[ -d "_dist/sd/switch/Kip_Select" ] || mkdir _dist/sd/switch/Kip_Select
 	@[ -d "_dist/sd/switch/tinfoil" ] || mkdir _dist/sd/switch/tinfoil
+	@[ -d "_dist/sd/switch/Goldleaf" ] || mkdir _dist/sd/switch/Goldleaf
 	@[ -d "_dist/sd/bootloader" ] || mkdir _dist/sd/bootloader
 	@[ -d "_dist/sd/bootloader/ini" ] || mkdir _dist/sd/bootloader/ini
 	@[ -d "_dist/sd/bootloader/payloads" ] || mkdir _dist/sd/bootloader/payloads
@@ -31,8 +32,15 @@ ams:
 	@cp Atmosphere/out/* _dist/sd/ -R
 	@cp fusee-primary.bin _dist/sd/bootloader/payloads/ -R
 
+sig:
+	@unzip -o patches.zip -d _static/sigpatches/atmosphere
+
 nxshell:
 	@cp NX-Shell.nro _dist/sd/switch/NX-Shell/
+
+goldleaf:
+	@cp Goldleaf/Goldleaf/Output/Goldleaf.nro _dist/sd/switch/Goldleaf/
+	@cp Goldtree.exe _dist/
 
 kipselect:
 	@cp Kip_Select.nro _dist/sd/switch/Kip_Select/
@@ -50,9 +58,13 @@ static:
 	@cp _static/tinfoil/usb_install_pc.py _dist/
 	@cp _static/singularite/hekate_ipl.ini _dist/sd/bootloader/
 	@cp _static/singularite/bootlogo.bmp _dist/sd/bootloader/
+	@cp _static/modules/emummc.kipm _dist/sd/bootloader/sys/
+	@cp _static/modules/res.pak _dist/sd/bootloader/sys/
 	@cp README.md _dist/
 
 hkt:
-	@cp hekate/output/hekate.bin _dist/hekate_ctcaer_4.9.1.bin
+	@cp hekate/output/hekate.bin _dist/hekate_ctcaer_5.0.1.bin
 	@cp hekate/output/libsys_lp0.bso _dist/sd/bootloader/sys/
+	@cp hekate/output/libsys_minerva.bso _dist/sd/bootloader/sys/
+	@cp hekate/output/nyx.bin _dist/sd/bootloader/sys/
 	@cp hekate/output/hekate.bin _dist/sd/atmosphere/reboot_payload.bin
