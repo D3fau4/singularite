@@ -1,5 +1,5 @@
-# Singularité
-Simplest, slimmest, transparent CFW distro.
+# Vortex
+Simple fork of Singularité, slimmest, transparent CFW distro.
 Everything you need to get started, in a neatly packaged file.
 
 ## How to install
@@ -11,7 +11,7 @@ Everything you need to get started, in a neatly packaged file.
 ## What's included?
 - Pure and full **Atmosphere**. Not gutted, not chopped.
 - **Sigpatches** for Atmosphere.
-- Pre-configured **Hekate v4.9.1**.
+- Pre-configured **Hekate v5.0.1**.
 - **Homebrew Loader**.
 - **Homebrew Menu**.
 - **Checkpoint**.
@@ -29,15 +29,15 @@ Everything you need to get started, in a neatly packaged file.
    - libnx
    - SDL2
    - for other dependencies of included submodules, check their respective pages.
-2) Clone this repo: `git clone --recursive https://github.com/RShadowhand/singularite.git`
+2) Clone this repo: `git clone --recursive https://github.com/D3fau4/Vortex.git`
 3) Run `make` or `make release`
 
 ## Notes:
 - It may not be possible to build NX-Shell right now. For more info, visit NX-Shell repo, or contact joel16.
-  - For this reason, Singularité downloads NX-Shell at latest release for the time being.
+  - For this reason, Vortex downloads NX-Shell at latest release for the time being.
   - As soon as it's possible to compile it without special requirements, makefile will be updated.
 - Tinfoil is added as prebuilt, as it's not actively being developed, and the history of it is rather hazy.
-- Instead of `hekate_ctcaer_4.9.1.bin`, you can push `fusee-primary.bin` for Atmosphere 0.8.2.
+- Instead of `hekate_ctcaer_5.0.1.bin`, you can push `fusee-primary.bin` for Atmosphere 0.9.2.
   - You can find it in `_dist/bootloader/payloads` folder.
 
 ## Credits
@@ -47,6 +47,7 @@ Everything you need to get started, in a neatly packaged file.
 - Everyone that contributed to `nx-hbloader`.
 - Everyone that contributed to `nx-hbmenu`.
 - @BernardoGiordano, and the FlagBrew team.
+- @XorTroll for `Goldleaf`.
 - mtheall, and everyone that contributed to `FTPD`
 - @exelix and Qcean team.
 - @Sciguy429, for `KipSelect`.
