@@ -9,7 +9,7 @@ clean:
 	$(MAKE) -C Checkpoint clean
 	$(MAKE) -C ftpd clean
 	$(MAKE) -C hekate clean
-	$(MAKE) -C Goldleaf/Goldleaf
+	$(MAKE) -C Goldleaf/Goldleaf clean
 	# $(MAKE) -C nx-hbloader clean
 	# $(MAKE) -C nx-hbmenu clean
 	# $(MAKE) -C KipSelect clean
