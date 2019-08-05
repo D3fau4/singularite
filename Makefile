@@ -13,8 +13,8 @@ clean:
 	# $(MAKE) -C nx-hbloader clean
 	# $(MAKE) -C nx-hbmenu clean
 	# $(MAKE) -C KipSelect clean
-	$(MAKE) -f singularite clean
-	@rm -rf singularite*.zip
+	$(MAKE) -f Vortex clean
+	@rm -rf Vortex*.zip
 	@rm -rf NX-Shell.nro
 	@rm -rf Kip_Select.nro
 	@rm -rf fusee-primary.bin
