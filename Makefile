@@ -79,7 +79,7 @@ sigpatches:
 	@[ -f patches.zip ] || curl "https://gbatemp.net/attachments/2-0-0-8-1-0-zip.170607/" -o patches.zip
 
 sin:
-	$(MAKE) -f singularite
+	$(MAKE) -f Vortex
 
 release: all
-	cd _dist; zip singularite.zip * -r -9; mv singularite.zip ../singularite-$(VERSION)-$(COMMIT).zip
+	cd _dist; zip Vortex.zip * -r -9; mv Vortex.zip ../Vortex-$(VERSION)-$(COMMIT).zip

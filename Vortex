@@ -53,11 +53,11 @@ hb:
 
 static:
 	@cp _static/sigpatches/atmosphere _dist/sd/ -R
-	@cp _static/singularite/config _dist/sd/ -R
+	@cp _static/Vortex/config _dist/sd/ -R
 	@cp _static/tinfoil/tinfoil.nro _dist/sd/switch/tinfoil/
 	@cp _static/tinfoil/usb_install_pc.py _dist/
-	@cp _static/singularite/hekate_ipl.ini _dist/sd/bootloader/
-	@cp _static/singularite/bootlogo.bmp _dist/sd/bootloader/
+	@cp _static/Vortex/hekate_ipl.ini _dist/sd/bootloader/
+	@cp _static/Vortex/bootlogo.bmp _dist/sd/bootloader/
 	@cp _static/modules/emummc.kipm _dist/sd/bootloader/sys/
 	@cp _static/modules/res.pak _dist/sd/bootloader/sys/
 	@cp README.md _dist/
