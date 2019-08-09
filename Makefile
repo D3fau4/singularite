@@ -1,5 +1,5 @@
 MAJORVER := "1"
-MINORVER := "3"
+MINORVER := "4"
 MICROVER := "0"
 VERSION := $(MAJORVER).$(MINORVER).$(MICROVER)
 COMMIT := $(shell git rev-parse --short HEAD)
@@ -28,8 +28,8 @@ ams:
 	@echo "Downloading Atmosphere, because compiling may not be possible."
 	@echo "Visit https://github.com/Atmosphere-NX/Atmosphere for help!"
 	@echo "---------------------------------------------------------------"
-	@[ -f ams.zip ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.2/atmosphere-0.9.2-master-6f85b11f+hbl-2.1+hbmenu-3.0.1.zip" -O ams.zip
-	@[ -f fusee-primary.bin ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.2/fusee-primary.bin" -O fusee-primary.bin
+	@[ -f ams.zip ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.3/atmosphere-0.9.3-master-25218795+hbl-2.2+hbmenu-3.1.0.zip" -O ams.zip
+	@[ -f fusee-primary.bin ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.3/fusee-primary.bin" -O fusee-primary.bin
 
 nxshell:
 	@echo "---------------------------------------------------------------"
@@ -61,7 +61,7 @@ goldleaf:
 	@echo "Downloading Goldtree, because compiling may not be possible."
 	@echo "Visit https://github.com/XorTroll/Goldleaf for help!"
 	@echo "---------------------------------------------------------------"
-	@[ -f Goldtree.exe ] || wget "https://github.com/XorTroll/Goldleaf/releases/download/0.6/Goldtree.exe" -O Goldtree.exe
+	@[ -f Goldtree.exe ] || wget "https://github.com/XorTroll/Goldleaf/releases/download/0.6.1/Goldtree.exe" -O Goldtree.exe
 
 hbloader:
 	# @$(MAKE) -C nx-hbloader
