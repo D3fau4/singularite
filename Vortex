@@ -33,7 +33,7 @@ ams:
 	@cp fusee-primary.bin _dist/sd/bootloader/payloads/ -R
 
 sig:
-	@unzip -o patches.zip -d _static/sigpatches/atmosphere
+	@unzip -o patches.zip -d _dist/sd/
 
 nxshell:
 	@cp NX-Shell.nro _dist/sd/switch/NX-Shell/
@@ -52,7 +52,7 @@ hb:
 	@cp ftpd/ftpd.nro _dist/sd/switch/ftpd/
 
 static:
-	@cp _static/sigpatches/atmosphere _dist/sd/ -R
+	# @cp _static/sigpatches/atmosphere _dist/sd/ -R
 	@cp _static/Vortex/config _dist/sd/ -R
 	@cp _static/tinfoil/tinfoil.nro _dist/sd/switch/tinfoil/
 	@cp _static/tinfoil/usb_install_pc.py _dist/
