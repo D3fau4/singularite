@@ -1,4 +1,4 @@
-all: dirs ams sig nxshell goldleaf kipselect hb static hkt
+all: dirs ams sig nxshell goldleaf reinxspoofer kipselect hb static hkt
 
 clean:
 	@rm -rf _dist
