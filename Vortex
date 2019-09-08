@@ -22,6 +22,9 @@ dirs:
 	@[ -d "_dist/sd/atmosphere" ] || mkdir _dist/sd/atmosphere
 	@[ -d "_dist/sd/atmosphere/kips" ] || mkdir _dist/sd/atmosphere/kips
 	@[ -d "_dist/sd/atmosphere/kips_disabled" ] || mkdir _dist/sd/atmosphere/kips_disabled
+	@[ -d "_dist/sd/atmosphere/titles/0100000000000069" ] || mkdir _dist/sd/atmosphere/titles/0100000000000069
+	@[ -d "_dist/sd/atmosphere/titles/0100000000000069/flags" ] || mkdir _dist/sd/atmosphere/titles/0100000000000069/flags
+	@[ -d "_dist/sd/config/reinx-spoofer" ] || mkdir _dist/sd/config/reinx-spoofer
 
 ams:
 	# @unzip -o Atmosphere/out/*.zip -d Atmosphere/out
@@ -51,6 +54,10 @@ hb:
 	@cp Checkpoint/switch/out/Checkpoint.nro _dist/sd/switch/Checkpoint/
 	@cp ftpd/ftpd.nro _dist/sd/switch/ftpd/
 
+reinxspoofer:
+	@cp ReiNX-Spoofer/ReiNX-Spoofer.nsp _dist/sd/atmosphere/titles/0100000000000069/exefs.nsp
+	@cp ReiNX-Spoofer/config.ini _dist/sd/config/reinx-spoofer/config.ini
+
 static:
 	# @cp _static/sigpatches/atmosphere _dist/sd/ -R
 	@cp _static/Vortex/config _dist/sd/ -R
@@ -60,6 +67,7 @@ static:
 	@cp _static/Vortex/bootlogo.bmp _dist/sd/bootloader/
 	@cp _static/modules/emummc.kipm _dist/sd/bootloader/sys/
 	@cp _static/modules/res.pak _dist/sd/bootloader/sys/
+	@cp _static/flags/boot2.flag _dist/sd/atmosphere/titles/0100000000000069/flags/boot2.flag
 	@cp README.md _dist/
 
 hkt:

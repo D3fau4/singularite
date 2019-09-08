@@ -1,15 +1,18 @@
 MAJORVER := "1"
 MINORVER := "4"
-MICROVER := "1"
+MICROVER := "2"
 VERSION := $(MAJORVER).$(MINORVER).$(MICROVER)
 COMMIT := $(shell git rev-parse --short HEAD)
-all: checkpoint ftp goldleaf hkt hbloader hbmenu ams nxshell kipselect sigpatches sin
+all: checkpoint ftp goldleaf hkt hbloader hbmenu ams nxshell reinxspoofer kipselect sigpatches sin
 
 clean:
 	$(MAKE) -C Checkpoint clean
 	$(MAKE) -C ftpd clean
 	$(MAKE) -C hekate clean
 	$(MAKE) -C Goldleaf/Goldleaf clean
+	@$(MAKE) -C ReiNX-Spoofer/SimpleIniParser clean
+	@$(MAKE) -C ReiNX-Spoofer/libstratosphere clean
+	@$(MAKE) -C ReiNX-Spoofer clean
 	# $(MAKE) -C nx-hbloader clean
 	# $(MAKE) -C nx-hbmenu clean
 	# $(MAKE) -C KipSelect clean
@@ -70,6 +73,11 @@ hbloader:
 hbmenu:
 	# @$(MAKE) -C nx-hbmenu nx
 	@echo "Included in Atmosphere"
+
+reinxspoofer:
+	@$(MAKE) -C ReiNX-Spoofer/SimpleIniParser
+	@$(MAKE) -C ReiNX-Spoofer/libstratosphere
+	@$(MAKE) -C ReiNX-Spoofer
 
 sigpatches:
 	@echo "----------------------------------------------------------------------------------------------------------------"
