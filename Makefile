@@ -84,7 +84,7 @@ sigpatches:
 	@echo "Downloading IPS patches (ES & FS), because compiling may not be possible."
 	@echo "Visit https://gbatemp.net/threads/i-heard-that-you-guys-need-some-sweet-patches-for-atmosphere.521164/ for help!"
 	@echo "----------------------------------------------------------------------------------------------------------------"
-	@[ -f patches.zip ] || curl "https://cdn.discordapp.com/attachments/444174715314241537/621296614199263233/2.0.0-9.0.0.zip" -o patches.zip
+	@[ -f patches.zip ] || curl "https://gbatemp.net/attachments/2-0-0-9-0-0-zip.179434/" -o patches.zip
 
 sin:
 	$(MAKE) -f Vortex
