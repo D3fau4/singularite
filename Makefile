@@ -1,6 +1,6 @@
 MAJORVER := "1"
-MINORVER := "4"
-MICROVER := "2"
+MINORVER := "5"
+MICROVER := "0"
 VERSION := $(MAJORVER).$(MINORVER).$(MICROVER)
 COMMIT := $(shell git rev-parse --short HEAD)
 all: checkpoint ftp goldleaf hkt hbloader hbmenu ams nxshell reinxspoofer kipselect sigpatches sin
@@ -31,8 +31,8 @@ ams:
 	@echo "Downloading Atmosphere, because compiling may not be possible."
 	@echo "Visit https://github.com/Atmosphere-NX/Atmosphere for help!"
 	@echo "---------------------------------------------------------------"
-	@[ -f ams.zip ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.3/atmosphere-0.9.3-master-25218795+hbl-2.2+hbmenu-3.1.0.zip" -O ams.zip
-	@[ -f fusee-primary.bin ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.3/fusee-primary.bin" -O fusee-primary.bin
+	@[ -f ams.zip ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.4/atmosphere-0.9.4-master-c62c4846+hbl-2.2+hbmenu-3.1.1.zip" -O ams.zip
+	@[ -f fusee-primary.bin ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.4/fusee-primary.bin" -O fusee-primary.bin
 
 nxshell:
 	@echo "---------------------------------------------------------------"
@@ -84,7 +84,7 @@ sigpatches:
 	@echo "Downloading IPS patches (ES & FS), because compiling may not be possible."
 	@echo "Visit https://gbatemp.net/threads/i-heard-that-you-guys-need-some-sweet-patches-for-atmosphere.521164/ for help!"
 	@echo "----------------------------------------------------------------------------------------------------------------"
-	@[ -f patches.zip ] || curl "https://gbatemp.net/attachments/2-0-0-8-1-0-zip.170607/" -o patches.zip
+	@[ -f patches.zip ] || curl "https://cdn.discordapp.com/attachments/444174715314241537/621296614199263233/2.0.0-9.0.0.zip" -o patches.zip
 
 sin:
 	$(MAKE) -f Vortex

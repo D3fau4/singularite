@@ -20,6 +20,8 @@ dirs:
 	@[ -d "_dist/sd/bootloader/payloads" ] || mkdir _dist/sd/bootloader/payloads
 	@[ -d "_dist/sd/bootloader/sys" ] || mkdir _dist/sd/bootloader/sys
 	@[ -d "_dist/sd/atmosphere" ] || mkdir _dist/sd/atmosphere
+	@[ -d "_dist/sd/atmosphere/exefs_patches" ] || mkdir _dist/sd/atmosphere/exefs_patches
+	@[ -d "_dist/sd/atmosphere/exefs_patches/logo" ] || mkdir _dist/sd/atmosphere/exefs_patches/logo
 	@[ -d "_dist/sd/atmosphere/kips" ] || mkdir _dist/sd/atmosphere/kips
 	@[ -d "_dist/sd/atmosphere/kips_disabled" ] || mkdir _dist/sd/atmosphere/kips_disabled
 	@[ -d "_dist/sd/atmosphere/titles" ] || mkdir _dist/sd/atmosphere/titles
@@ -63,6 +65,7 @@ reinxspoofer:
 static:
 	# @cp _static/sigpatches/atmosphere _dist/sd/ -R
 	@cp _static/Vortex/config _dist/sd/ -R
+	@cp _static/exefs_patches/logo _dist/sd/atmosphere/exefs_patches -R
 	@cp _static/tinfoil/tinfoil.nro _dist/sd/switch/tinfoil/
 	@cp _static/tinfoil/usb_install_pc.py _dist/
 	@cp _static/Vortex/hekate_ipl.ini _dist/sd/bootloader/
