@@ -31,7 +31,7 @@ ams:
 	@echo "Downloading Atmosphere, because compiling may not be possible."
 	@echo "Visit https://github.com/Atmosphere-NX/Atmosphere for help!"
 	@echo "---------------------------------------------------------------"
-	@[ -f ams.zip ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.4/atmosphere-0.9.4-master-c62c4846+hbl-2.2+hbmenu-3.1.1.zip" -O ams.zip
+	@[ -f ams.zip ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.4/atmosphere-0.9.4-master-a750e55f+hbl-2.2+hbmenu-3.1.1.zip" -O ams.zip
 	@[ -f fusee-primary.bin ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.4/fusee-primary.bin" -O fusee-primary.bin
 
 nxshell:
