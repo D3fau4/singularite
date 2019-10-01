@@ -39,7 +39,7 @@ nxshell:
 	@echo "Downloading NX-Shell, because compiling may not be possible."
 	@echo "Visit https://github.com/joel16/NX-Shell for help!"
 	@echo "---------------------------------------------------------------"
-	@[ -f NX-Shell.nro ] || wget "https://github.com/joel16/NX-Shell/releases/download/2.00/NX-Shell.nro" -O NX-Shell.nro
+	@[ -f NX-Shell.nro ] || wget "https://github.com/joel16/NX-Shell/releases/download/2.11/NX-Shell.nro" -O NX-Shell.nro
 
 kipselect:
 	# @$(MAKE) -C KipSelect
@@ -64,7 +64,7 @@ goldleaf:
 	@echo "Downloading Goldtree, because compiling may not be possible."
 	@echo "Visit https://github.com/XorTroll/Goldleaf for help!"
 	@echo "---------------------------------------------------------------"
-	@[ -f Goldtree.exe ] || wget "https://github.com/XorTroll/Goldleaf/releases/download/0.6.1/Goldtree.exe" -O Goldtree.exe
+	@[ -f Goldtree.exe ] || wget "https://github.com/XorTroll/Goldleaf/releases/download/0.7.2/Quark.jar" -O Quark.jar
 
 hbloader:
 	# @$(MAKE) -C nx-hbloader
