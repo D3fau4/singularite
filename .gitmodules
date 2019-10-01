@@ -25,3 +25,6 @@
 [submodule "Goldleaf"]
 	path = Goldleaf
 	url = https://github.com/XorTroll/Goldleaf.git
+[submodule "ReiNX-Spoofer"]
+	path = ReiNX-Spoofer
+	url = https://github.com/NicholeMattera/ReiNX-Spoofer.git
