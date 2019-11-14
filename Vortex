@@ -44,7 +44,7 @@ nxshell:
 
 goldleaf:
 	@cp Goldleaf/Goldleaf/Output/Goldleaf.nro _dist/sd/switch/Goldleaf/
-	@cp Goldtree.exe _dist/
+	@cp Quark.jar _dist/
 
 kipselect:
 	@cp Kip_Select.nro _dist/sd/switch/Kip_Select/
