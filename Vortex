@@ -1,4 +1,4 @@
-all: dirs ams sig nxshell goldleaf reinxspoofer kipselect hb static hkt
+all: dirs ams sig nxshell goldleaf kipselect hb static hkt
 
 clean:
 	@rm -rf _dist
@@ -25,10 +25,7 @@ dirs:
 	@[ -d "_dist/sd/atmosphere/kips" ] || mkdir _dist/sd/atmosphere/kips
 	@[ -d "_dist/sd/atmosphere/kips_disabled" ] || mkdir _dist/sd/atmosphere/kips_disabled
 	@[ -d "_dist/sd/atmosphere/titles" ] || mkdir _dist/sd/atmosphere/titles
-	@[ -d "_dist/sd/atmosphere/titles/0100000000000069" ] || mkdir _dist/sd/atmosphere/titles/0100000000000069
-	@[ -d "_dist/sd/atmosphere/titles/0100000000000069/flags" ] || mkdir _dist/sd/atmosphere/titles/0100000000000069/flags
 	@[ -d "_dist/sd/config" ] || mkdir _dist/sd/config
-	@[ -d "_dist/sd/config/reinx-spoofer" ] || mkdir _dist/sd/config/reinx-spoofer
 
 ams:
 	# @unzip -o Atmosphere/out/*.zip -d Atmosphere/out
@@ -57,10 +54,6 @@ hb:
 	# @cp nx-hbmenu/nx-hbmenu.nro _dist/sd/hbmenu.nro
 	@cp Checkpoint/switch/out/Checkpoint.nro _dist/sd/switch/Checkpoint/
 	@cp ftpd/ftpd.nro _dist/sd/switch/ftpd/
-
-reinxspoofer:
-	@cp ReiNX-Spoofer/ReiNX-Spoofer.nsp _dist/sd/atmosphere/titles/0100000000000069/exefs.nsp
-	@cp ReiNX-Spoofer/config.ini _dist/sd/config/reinx-spoofer/config.ini
 
 static:
 	# @cp _static/sigpatches/atmosphere _dist/sd/ -R
