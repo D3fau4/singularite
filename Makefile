@@ -10,9 +10,6 @@ clean:
 	$(MAKE) -C ftpd clean
 	$(MAKE) -C hekate clean
 	$(MAKE) -C Goldleaf/Goldleaf clean
-	@$(MAKE) -C ReiNX-Spoofer/SimpleIniParser clean
-	@$(MAKE) -C ReiNX-Spoofer/libstratosphere clean
-	@$(MAKE) -C ReiNX-Spoofer clean
 	# $(MAKE) -C nx-hbloader clean
 	# $(MAKE) -C nx-hbmenu clean
 	# $(MAKE) -C KipSelect clean
@@ -47,7 +44,7 @@ kipselect:
 	@echo "Downloading KipSelect, because compiling may not be possible."
 	@echo "Visit https://github.com/Sciguy429/KipSelect for help!"
 	@echo "---------------------------------------------------------------"
-	@[ -f Kip_Select.nro ] || wget "https://github.com/Sciguy429/KipSelect/releases/download/3.0.9/Kip_Select_V3.0.9.nro" -O Kip_Select.nro
+	@[ -f Kip_Select.nro ] || wget "https://github.com/Sciguy429/KipSelect/releases/download/3.1.0/Kip_Select.nro" -O Kip_Select.nro
 
 checkpoint:
 	@$(MAKE) -C Checkpoint switch
@@ -64,7 +61,7 @@ goldleaf:
 	@echo "Downloading Goldtree, because compiling may not be possible."
 	@echo "Visit https://github.com/XorTroll/Goldleaf for help!"
 	@echo "---------------------------------------------------------------"
-	@[ -f Goldtree.exe ] || wget "https://github.com/XorTroll/Goldleaf/releases/download/0.7.2/Quark.jar" -O Quark.jar
+	@[ -f Goldtree.exe ] || wget "https://github.com/XorTroll/Goldleaf/releases/download/0.7.3/Quark.jar" -O Quark.jar
 
 hbloader:
 	# @$(MAKE) -C nx-hbloader
@@ -79,7 +76,7 @@ sigpatches:
 	@echo "Downloading IPS patches (ES & FS), because compiling may not be possible."
 	@echo "Visit https://gbatemp.net/threads/i-heard-that-you-guys-need-some-sweet-patches-for-atmosphere.521164/ for help!"
 	@echo "----------------------------------------------------------------------------------------------------------------"
-	@[ -f patches.zip ] || curl "https://gbatemp.net/attachments/2-0-0-9-0-0-zip.179434/" -o patches.zip
+	@[ -f patches.zip ] || curl "https://gbatemp.net/attachments/2-0-0-9-0-1-zip.181415/" -o patches.zip
 
 sin:
 	$(MAKE) -f Vortex
