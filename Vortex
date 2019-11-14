@@ -65,7 +65,6 @@ static:
 	@cp _static/Vortex/bootlogo.bmp _dist/sd/bootloader/
 	@cp _static/modules/emummc.kipm _dist/sd/bootloader/sys/
 	@cp _static/modules/res.pak _dist/sd/bootloader/sys/
-	@cp _static/flags/boot2.flag _dist/sd/atmosphere/titles/0100000000000069/flags/boot2.flag
 	@cp README.md _dist/
 
 hkt:
