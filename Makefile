@@ -1,6 +1,6 @@
 MAJORVER := "1"
 MINORVER := "5"
-MICROVER := "1"
+MICROVER := "2"
 VERSION := $(MAJORVER).$(MINORVER).$(MICROVER)
 COMMIT := $(shell git rev-parse --short HEAD)
 all: checkpoint ftp goldleaf hkt hbloader hbmenu ams nxshell kipselect sigpatches sin
