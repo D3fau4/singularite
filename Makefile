@@ -28,8 +28,8 @@ ams:
 	@echo "Downloading Atmosphere, because compiling may not be possible."
 	@echo "Visit https://github.com/Atmosphere-NX/Atmosphere for help!"
 	@echo "---------------------------------------------------------------"
-	@[ -f ams.zip ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.4/atmosphere-0.9.4-master-a750e55f+hbl-2.2+hbmenu-3.1.1.zip" -O ams.zip
-	@[ -f fusee-primary.bin ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.9.4/fusee-primary.bin" -O fusee-primary.bin
+	@[ -f ams.zip ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.10.2/atmosphere-0.10.2-master-d5458960+hbl-2.3+hbmenu-3.2.0.zip" -O ams.zip
+	@[ -f fusee-primary.bin ] || wget "https://github.com/Atmosphere-NX/Atmosphere/releases/download/0.10.2/fusee-primary.bin" -O fusee-primary.bin
 
 nxshell:
 	@echo "---------------------------------------------------------------"
@@ -61,7 +61,7 @@ goldleaf:
 	@echo "Downloading Goldtree, because compiling may not be possible."
 	@echo "Visit https://github.com/XorTroll/Goldleaf for help!"
 	@echo "---------------------------------------------------------------"
-	@[ -f Goldtree.exe ] || wget "https://github.com/XorTroll/Goldleaf/releases/download/0.7.3/Quark.jar" -O Quark.jar
+	@[ -f Goldtree.exe ] || wget "https://github.com/XorTroll/Goldleaf/releases/download/0.8/Quark.jar" -O Quark.jar
 
 hbloader:
 	# @$(MAKE) -C nx-hbloader
@@ -76,7 +76,7 @@ sigpatches:
 	@echo "Downloading IPS patches (ES & FS), because compiling may not be possible."
 	@echo "Visit https://gbatemp.net/threads/i-heard-that-you-guys-need-some-sweet-patches-for-atmosphere.521164/ for help!"
 	@echo "----------------------------------------------------------------------------------------------------------------"
-	@[ -f patches.zip ] || curl "https://gbatemp.net/attachments/2-0-0-9-0-1-zip.181415/" -o patches.zip
+	@[ -f patches.zip ] || curl "https://cdn.discordapp.com/attachments/519987015152959503/663386832326623253/2.0.0-9.1.0.zip" -o patches.zip
 
 sin:
 	$(MAKE) -f Vortex
